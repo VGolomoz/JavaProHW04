@@ -14,7 +14,7 @@
         out.println("<div class=\"w3-panel w3-green w3-display-container w3-card-4 w3-round\">\n" +
                     "<span onclick=\"this.parentElement.style.display='none'\"\n" +
                     "class=\"w3-button w3-margin-right w3-display-right w3-round-large w3-hover-green w3-border w3-border-green w3-hover-border-grey\">×</span>\n" +
-                    "<h5>'" + request.getSession().getAttribute("done") + "'</h5>\n</div>" );
+                    "<h5>'" + request.getSession().getAttribute("inputDone") + "'</h5>\n</div>" );
                     request.getSession().removeAttribute("inputDone");
      }
      else if (request.getSession().getAttribute("wrongNumber") != null) {
@@ -38,6 +38,8 @@
         </label>
          <button type="submit" class="w3-btn w3-green w3-round-large w3-margin-bottom">Send</button>
         </form>
+
+        <a class="w3-button w3-green" href="/results">Show all users</a>
         </div>
 </body>
 </html>

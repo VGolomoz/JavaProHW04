@@ -1,3 +1,5 @@
+package JavaProHW04;
+
 import java.util.Objects;
 
 public class User {
@@ -47,7 +49,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "JavaProHW04.User{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
