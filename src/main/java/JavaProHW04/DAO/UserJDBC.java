@@ -1,18 +1,15 @@
 package JavaProHW04.DAO;
 
-import JavaProHW04.User;
+import JavaProHW04.entity.User;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class UserJDBC implements DAO<User> {
+public class UserJDBC implements UserDAO {
 
-    private Connection connection;
+    private Connection connection = DBCPool.getConnection();
 
-    public UserJDBC(Connection connection) {
-        this.connection = connection;
-    }
 
     public synchronized void create(User user) {
         try (PreparedStatement ps = connection.prepareStatement(UserSQL.INSERT_NEW_USER.getQUERY())) {

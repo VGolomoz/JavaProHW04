@@ -1,8 +1,10 @@
 C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\UserSQL.java
-C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\InputServlet.java
-C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\ResultsServlet.java
+C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\servlet\ResultsServlet.java
 C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\DBConfig.java
+C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\entity\User.java
+C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\servlet\InputServlet.java
 C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\DBCPool.java
 C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\DAO.java
-C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\User.java
+C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\service\UserService.java
+C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\UserDAO.java
 C:\Users\vadym.golomoz\IdeaProjects\JavaProHW04\src\main\java\JavaProHW04\DAO\UserJDBC.java

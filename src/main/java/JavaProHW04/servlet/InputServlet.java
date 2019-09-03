@@ -1,8 +1,9 @@
-package JavaProHW04;
+package JavaProHW04.servlet;
 
 import JavaProHW04.DAO.DBCPool;
 import JavaProHW04.DAO.UserJDBC;
-
+import JavaProHW04.entity.User;
+import JavaProHW04.service.UserService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,13 +19,12 @@ import java.util.regex.Pattern;
 @WebServlet(urlPatterns = "/input")
 public class InputServlet extends HttpServlet {
 
-   static {
+    private UserService userService = new UserService(new UserJDBC());
 
+    @Override
+    public void init() throws ServletException {
         try (Statement st = DBCPool.getConnection().createStatement()) {
 
-            st.execute("DROP SCHEMA IF EXISTS `JavaProHW04`");
-            st.execute("CREATE SCHEMA `JavaProHW04`");
-            st.execute("use `JavaProHW04`");
             st.execute("DROP TABLE IF EXISTS `Users`");
             st.execute("CREATE TABLE `Users` (`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
                     " `name` VARCHAR(20) NOT NULL," +
@@ -52,7 +52,7 @@ public class InputServlet extends HttpServlet {
             user.setPhoneNumber(phoneNumber);
             user.setName(req.getParameter("name"));
             user.setSurname(req.getParameter("surname"));
-            new UserJDBC(DBCPool.getConnection()).create(user);
+            userService.addUser(user);
             req.getSession().setAttribute("inputDone", "Input Successful");
         }
         else {req.getSession().setAttribute("wrongNumber", "Wrong mobile phone number");

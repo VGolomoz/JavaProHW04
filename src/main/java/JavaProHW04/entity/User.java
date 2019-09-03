@@ -1,4 +1,4 @@
-package JavaProHW04;
+package JavaProHW04.entity;
 
 import java.util.Objects;
 
@@ -49,7 +49,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "JavaProHW04.User{" +
+        return "JavaProHW04.entity.User{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
