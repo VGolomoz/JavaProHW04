@@ -45,7 +45,7 @@ public class UserJDBC implements DAO<User> {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() {
         try {
             connection.close();
         } catch (SQLException e) {

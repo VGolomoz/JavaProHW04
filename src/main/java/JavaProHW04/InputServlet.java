@@ -1,7 +1,6 @@
 package JavaProHW04;
 
 import JavaProHW04.DAO.DBCPool;
-import JavaProHW04.DAO.DBConfig;
 import JavaProHW04.DAO.UserJDBC;
 
 import javax.servlet.ServletException;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.regex.Matcher;
